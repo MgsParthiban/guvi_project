@@ -1,6 +1,6 @@
 services:
   webapp:
-    image: "${pub_repo}"
+    image: "${private_repo}"
     ports: 
     - 80:80
     networks:
