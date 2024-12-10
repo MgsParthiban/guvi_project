@@ -1,0 +1,15 @@
+services:
+  webapp:
+    image: "${pub_repo}"
+    ports: 
+    - 80:80
+    networks:
+      - guvi
+    secrets:
+      - docker_credentials
+networks:
+  guvi:
+secrets:
+  docker_credentials:
+    file: ./secret.txt
+
